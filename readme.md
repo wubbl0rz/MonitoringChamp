@@ -53,3 +53,24 @@ You can configure the exporter using command-line flags or environment variables
 | Metric Name | Type | Description |
 |--------------|------|-------------|
 | `dir_size_bytes{dir="..."}` | Gauge | Directory size in bytes for each subdirectory in the data directory. |
+
+### Docker Build and Usage
+
+MonitoringChamp can be built and run using Docker for easier deployment and management.
+
+**Build Docker Image:**
+```sh
+docker build -t monitoringchamp:latest .
+```
+
+**Run Docker Container:**
+```sh
+docker run -d \
+  --name monitoringchamp \
+  -p 9100:9100 \
+  -e EXPORTER_DATA_DIR=/data \
+  -e EXPORTER_INTERVAL=5 \
+  -e EXPORTER_VERBOSE=0 \
+  -v /path/to/your/data:/data:ro \
+  monitoringchamp:latest start
+```
