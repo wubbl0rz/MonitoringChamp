@@ -1,15 +1,15 @@
-# Directory Size Exporter
+# 🚀 MonitoringChamp
+
+## 📦 Directory Size Exporter
 
 This project is a Prometheus exporter that periodically scans a directory and reports the size (in bytes) of each subdirectory. The metrics are exposed over HTTP for Prometheus scraping.
 
-***
+### ✨ Features
 
-### Features
-
-- Exports directory sizes as Prometheus metrics.
-- Configurable via command-line arguments or environment variables.
-- Supports tab completion for CLI commands.
-- Includes verbose logging option for debugging and monitoring.
+- 📊 Exports directory sizes as Prometheus metrics.
+- ⚙️ Configurable via command-line arguments or environment variables.
+- 🧑‍💻 Supports tab completion for CLI commands.
+- 🔎 Includes verbose logging option for debugging and monitoring.
 
 ***
 
